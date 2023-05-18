@@ -14,5 +14,5 @@ Normally, packed assets with Zip-Lzma2 method cannot be unpacked via 7-Zip. But 
 - Create adobeTemp directory on root of C drive. Maybe drive section change due to Adobe Creative Cloud's default install location settings.
 - Edit script's destination directory to your desire.
 - Run this script as admin. You'll see robocopy doing it's work.
-- Run your desire LZMA2-compressed Adobe installer.
+- Run your desired LZMA2-compressed Adobe installer.
 - Wait to install to be complete.
