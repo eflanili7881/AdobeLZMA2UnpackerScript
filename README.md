@@ -8,7 +8,7 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 - I suggest run this script on freshly installed Windows due to HyperDrive installer will skip already installed packages. Therefore, some packages may unpacked.
 
 ## What does this script do?
-This script continuously copies unpacked Adobe assets from adobeTemp folder to desired location via robocopy.
+Normally, packed assets with Zip-Lzma2 method cannot be unpacked via 7-Zip. But they will extracted to adobeTemp folder during installation. They can be tricky to get these installer files as when install of specific package was finished, they will be deleted. This script continuously copies unpacked Adobe assets from adobeTemp folder to desired location via robocopy. It copies only new files.
 
 ## Instructions
 - Create adobeTemp directory on root of C drive. Maybe drive section change due to Adobe Creative Cloud's default install location settings.
