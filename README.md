@@ -5,7 +5,7 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 
 ## Special Note
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
-- I suggest run this script on freshly installed Windows due to HyperDrive installer will skip already installed packages. Therefore, some packages may not unpacked.
+- I suggest run this script on freshly installed Windows due to HyperDrive installer will skip already installed packages. Therefore, some packages may not be unpacked.
 
 ## What does this script do?
 Normally, packed assets with Zip-Lzma2 method, folder and file structure can be seen via any archiving software I know but cannot be unpacked via 7-Zip or other archive software that I know. But they will be extracted to adobeTemp folder during installation as raw. They can be tricky to get these installer files as when install of specific package was finished, they will be deleted. This script constantly copies unpacked Adobe assets from adobeTemp folder to desired location via robocopy. It copies only new files.
