@@ -7,10 +7,7 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
 - I suggest run this script on freshly installed Windows due to HyperDrive installer will skip already installed packages. Therefore, some packages may not be unpacked.
 - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
-  - Or, you can just put this lines to driver.xml to install all language files:
-  - /*<RequestInfo>
-        <InstallLanguage>ALL</InstallLanguage>
-    </RequestInfo>*/
+  - Or, you can just put *InstallLanguage* key with ALL value below from one level on *RequestInfo* key to driver.xml to install all language files.
   - Some installers have resources\AppInfo.json file. If this file exists, probably application.json and other crucial files are cannot be altered and HyperDrive installer gives "Installer is corrupt." error. To solve this, use older HyperDrive installer engine from older installers (4.5.0.300 and above should work.).
 
 ## What does this script do?
