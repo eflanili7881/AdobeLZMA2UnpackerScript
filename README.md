@@ -5,6 +5,7 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 
 ## Special Note
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
+  - You can pack and install these assets with the script I wrote at https://github.com/osmankovan123/AdobeRepackerAndInstallerScript/tree/HyperDrive
 - I suggest run this script on freshly installed Windows due to HyperDrive installer will skip already installed packages. Therefore, some packages may not be unpacked.
 - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
   - Some installers have resources\AppInfo.json file. If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version and HyperDrive installer gives "Installer is corrupt." error. To solve this, use HyperDrive installer engine with older version from one of the installers (4.5.0.300 and above should work.).
