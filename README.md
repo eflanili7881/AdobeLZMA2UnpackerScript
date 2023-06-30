@@ -21,3 +21,4 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 - Wait to install to be complete.
 - You'll see destination directory contains bunch of folders starting with ETR. These are the unpacked assets extracted from LZMA2-compressed packs from installation media.
   - Be sure to verify file and folder count from 7-Zip or other archiving software. Sometimes even with constant spawning of robocopy, some files may missing.
+    - Especially on Adobe XD and Fresco (Very especially CSDKConfigurator.exe missing, and icons directory.).
