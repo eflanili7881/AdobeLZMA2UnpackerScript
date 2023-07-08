@@ -26,6 +26,6 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 - Run this script as admin. You'll see robocopy doing it's work.
 - Run your desired LZMA2-compressed Adobe installer.
 - Wait to install to be complete.
-- You'll see destination directory contains bunch of folders starting with ETR. These are the unpacked assets extracted from LZMA2-compressed packs from installation media.
+- You'll see destination directory contains bunch of folders starting with ETR. These are the unpacked assets copied from adobeTemp directory.
   - Be sure to verify file and folder count from 7-Zip or other archiving software. Sometimes even with constant spawning of robocopy, some files may missing.
     - Especially on Adobe XD and Fresco (Very especially CSDKConfigurator.exe missing, and icons directory.).
