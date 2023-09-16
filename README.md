@@ -29,7 +29,6 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
   - On default, it's D:\AdobeLZMA2. Change it to something you desire. I suggest fast medium location to unpack destination.
 - Run this script as admin. You'll see robocopy doing it's work.
 - Run your desired Zip-Lzma2-compressed Adobe installer.
-  - If application that you want to install is not compatible with system that you want to install, but you want just to unpack packages, you can search and replace "condition" with anything else that isn't conflicting with any variable.
 - Wait to install to be complete.
 - You'll see destination directory contains bunch of folders starting with ETR. These are the unpacked assets copied from adobeTemp directory.
   - Be sure to verify file and folder count from 7-Zip or other archiving software. Sometimes even with constant spawning of robocopy, some files may missing. You can try to find these missing files from installed location of Adobe program and copy it to appropriate location on extracted installer assets.
