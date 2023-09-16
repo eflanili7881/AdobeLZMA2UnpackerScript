@@ -15,7 +15,7 @@ Please, don't use this script for piracy things. I wrote this script for who wan
   - Or you can uninstall every bits of Adobe apps via Adobe Creative Cloud Cleaner Tool at https://helpx.adobe.com/enterprise/kb/cc-cleaner-tool-for-enterprise-users.html .
     - If web page isn't accessible, try downloading from direct link at https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe .
 - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
-  - Or you can search and replace "condition" with anything else that isn't conflicting with any text editor. This also allows to unpack all architectures and Windows 7 special packages.
+  - Or you can search and replace "condition" with anything else that isn't conflicting with any variable. This also allows to unpack all architectures and Windows 7 special packages.
   - Some installers have resources\AppInfo.json file (i.e. Photoshop and Premiere Elements 2023). If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version (>=5.6.0.788) and HyperDrive installer gives "Installer is corrupt." error. To solve this, use HyperDrive installer engine with older version from one of the installers (4.5.0.300=<x<=5.5.0.617 should work.).
     - Or if you want most up to date HyperDrive installer engine, you can just replace Set-up.exe on root of the installer media with version 4.5.0.300=<x<=5.5.0.617.
 
@@ -27,6 +27,7 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 - Edit script's destination directory to your desire.
 - Run this script as admin. You'll see robocopy doing it's work.
 - Run your desired Zip-Lzma2-compressed Adobe installer.
+  - If application that you want to install is not compatible with system that you want to install, but you want just to unpack packages, you can search and replace "condition" with anything else that isn't conflicting with any variable.
 - Wait to install to be complete.
 - You'll see destination directory contains bunch of folders starting with ETR. These are the unpacked assets copied from adobeTemp directory.
   - Be sure to verify file and folder count from 7-Zip or other archiving software. Sometimes even with constant spawning of robocopy, some files may missing. You can try to find these missing files from installed location of Adobe program and copy it to appropriate location on extracted installer assets.
