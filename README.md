@@ -32,4 +32,4 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 - Wait to install to be complete.
 - You'll see destination directory contains bunch of folders starting with ETR. These are the unpacked assets copied from adobeTemp directory.
   - Be sure to verify file and folder count from 7-Zip or other archiving software. Sometimes even with constant spawning of robocopy, some files may missing. You can try to find these missing files from installed location of Adobe program and copy it to appropriate location on extracted installer assets.
-    - Especially on Adobe XD and Fresco (Very especially CSDKConfigurator.exe missing, and icons directory.).
+    - Especially on Adobe XD and Fresco (Very especially CSDKConfigurator.exe (this file cannot be found after installation AFAIK.) and icons directory.).
