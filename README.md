@@ -26,6 +26,7 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 ## Instructions
 - Create adobeTemp directory on root of C drive. Maybe drive section change due to Adobe Creative Cloud's default install location settings.
 - Edit script's destination directory to your desire.
+  - On default, it's D:\AdobeLZMA2. Change it to something you desire. I suggest fast medium location to unpack destination.
 - Run this script as admin. You'll see robocopy doing it's work.
 - Run your desired Zip-Lzma2-compressed Adobe installer.
   - If application that you want to install is not compatible with system that you want to install, but you want just to unpack packages, you can search and replace "condition" with anything else that isn't conflicting with any variable.
