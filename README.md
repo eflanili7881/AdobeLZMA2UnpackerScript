@@ -20,7 +20,8 @@ Please, don't use this script for piracy things. I wrote this script for who wan
   - Some installers have resources\AppInfo.json file (i.e. Photoshop and Premiere Elements 2023). If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version (>=5.6.0.788) and HyperDrive installer gives "Installer is corrupt." error. To solve this, use HyperDrive installer engine with older version from one of the installers (4.5.0.300=<x<=5.5.0.617 should work.).
     - Or if you want most up to date HyperDrive installer engine, you can just replace Set-up.exe on root of the installer media with version 4.5.0.300=<x<=5.5.0.617.
     - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
-  - (unclarified) Some Adobe apps may require HyperDrive installer engine version <=5.3.1.470 (i.e. Adobe Photoshop Express) as I tested Adobe Photoshop Express version 3.12.1.0 and Adobe Fresco 2.3.0.441 (5.5.0.617 not worked but 5.3.1.470 does).
+  - (I don't why this is happens) Some Adobe apps may require HyperDrive installer engine version <=5.3.1.470 (i.e. Adobe Photoshop Express) as I tested Adobe Photoshop Express version 3.12.1.0 and Adobe Fresco 2.3.0.441 (5.5.0.617 not worked but 5.3.1.470 does).
+    - Maybe this happens because all apps I tested are UWP-based ones. I didn't tested non-UWP Adobe app. 
     - You can just replace Set-up.exe on root of the installer media with version 4.5.0.300=<x<=5.3.1.470.
 
 ## What does this script do?
