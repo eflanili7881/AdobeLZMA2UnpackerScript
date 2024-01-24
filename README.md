@@ -21,6 +21,7 @@ Please, don't use this script for piracy things. I wrote this script for who wan
     - Or if you want most up to date HyperDrive installer engine, you can just replace Set-up.exe on root of the installer media with version 4.5.0.300=<x<=5.5.0.617.
     - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
   - (unclarified) Some Adobe apps may require HyperDrive installer engine version <=5.3.1.470 (i.e. Adobe Photoshop Express) as I tested Adobe Photoshop Express version 3.12.1.0 and Adobe Fresco 2.3.0.441 (5.5.0.617 not worked but 5.3.1.470 does).
+    - You can just replace Set-up.exe on root of the installer media with version 4.5.0.300=<x<=5.3.1.470.
 
 ## What does this script do?
 Normally, packed assets with Zip-Lzma2 method, folder and file structure can be seen via any archiving software, but cannot be directly unpacked via 7-Zip or other archive software that I know in existence. But they will be extracted to adobeTemp folder during installation as raw. They can be tricky to get these installer files as when install of specific package was finished, they will be deleted. This script constantly summons robocopy with no waiting and copies unpacked Adobe assets from adobeTemp folder to desired location, so be sure to have beefy computer if you can. It copies only new files so new files instantly copied to desired location as Adobe Installer copies unpacked assets to adobeTemp directory.
