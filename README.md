@@ -6,7 +6,7 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 
 ## Credits
 - https://superuser.com/users/219506/john-henckel for script that I found on https://superuser.com/a/1537608/1256850
-- https://github.com/osmankovan123 (me) for editing above script to use robocopy instead of xcopy.
+- Me for editing above script to use RoboCopy instead of XCopy.
 - Adobe Systems Incorporated for providing Zip-Lzma2-compressed applications.
 
 ## What does this script do?
