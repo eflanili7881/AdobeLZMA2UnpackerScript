@@ -30,8 +30,8 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
   - Or you can uninstall every bits of Adobe apps via Adobe Creative Cloud Cleaner Tool at https://helpx.adobe.com/enterprise/kb/cc-cleaner-tool-for-enterprise-users.html .
     - If web page isn't accessible, try downloading from direct link at https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe .
     - Or if this was deleted, you can access version 4.3.0.395 from Wayback Machine snapshot that I created from https://web.archive.org/web/20230916141417/https%3A%2F%2Fswupmf.adobe.com%2Fwebfeed%2FCleanerTool%2Fwin%2FAdobeCreativeCloudCleanerTool.exe .
-- To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
-  - Or you can search and replace "condition" with anything else that isn't conflicting with any variable. This also allows to unpack all architectures and Windows 7 special packages.
+  - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
+    - Or you can search and replace "condition" with anything else that isn't conflicting with any variable. This also allows to unpack all architectures and Windows 7 special packages.
 - Some installers have resources\AppInfo.json file (i.e. Photoshop and Premiere Elements 2023). If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version (>=5.6.0.788) and HyperDrive installer gives "Installer is corrupt." error. To solve this, use HyperDrive installer engine with older version from one of the installers (4.5.0.300=<x<=5.5.0.617 should work.).
   - Or if you want most up to date HyperDrive installer engine, you can just replace Set-up.exe on root of the installer media with version 4.5.0.300=<x<=5.5.0.617.
   - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
