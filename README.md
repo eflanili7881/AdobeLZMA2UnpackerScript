@@ -36,3 +36,5 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
   - Or if you want most up to date HyperDrive installer engine, you can just replace Set-up.exe on root of the installer media with version 4.5.0.300=<x<=5.5.0.617.
   - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
 - If you're gonna use 5.3.1.470<x<=5.5.0.617, be sure to put contents of packages folder to common/win64 (or winarm64 if you're gonna use ARM 64-bit version of Creative Cloud) and contents of resources folder (except content directory) to resources/win64 (or winarm64 if you're gonna use ARM 64-bit version of Creative Cloud) inside installation media.
+  - If you skip this, the installer will say "Installer is corrupt" as it can't find "common" directory inside of installation media.
+    - Or you can use Set-up.exe from 4.5.0.300=<x<=5.3.1.470.
