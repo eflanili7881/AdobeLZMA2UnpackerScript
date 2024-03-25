@@ -27,7 +27,7 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
   - You can pack and install these assets with the script I wrote at https://github.com/osmankovan123/AdobeRepackerAndInstallerScript/tree/HyperDrive-win
 - I suggest run this script on freshly installed Windows due to HyperDrive installer will skip already installed packages. Therefore, some packages may not be unpacked.
-  - Or you can uninstall every bits of Adobe apps via Adobe Creative Cloud Cleaner Tool at https://helpx.adobe.com/enterprise/kb/cc-cleaner-tool-for-enterprise-users.html .
+  - You can uninstall every bits of Adobe apps via Adobe Creative Cloud Cleaner Tool at https://helpx.adobe.com/enterprise/kb/cc-cleaner-tool-for-enterprise-users.html .
     - If web page isn't accessible, try downloading from direct link at https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe .
     - Or if this was deleted, you can access version 4.3.0.395 from Wayback Machine snapshot that I created from https://web.archive.org/web/20230916141417/https%3A%2F%2Fswupmf.adobe.com%2Fwebfeed%2FCleanerTool%2Fwin%2FAdobeCreativeCloudCleanerTool.exe .
   - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
