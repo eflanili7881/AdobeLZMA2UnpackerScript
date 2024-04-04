@@ -22,7 +22,7 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
     - Especially on Adobe XD and Fresco (Very especially CSDKConfigurator.exe (this file and icons directory)).
       - These files can be found on **C:\Program Files\Common Files\Adobe** ([AdobeCommon] variable).
       - Under that directory, look for app name that you're gonna unpack (i.e. Adobe Fresco).
-        - Or you can delete every file under **C:\Program Files\Common Files\Adobe\ (app name you're gonna unpack)** if you're gonna want unpack packaages in one-go.
+        - Or you can delete every file under **C:\Program Files\Common Files\Adobe\ (app name you're gonna unpack)** if you're gonna want unpack packages in one-go.
 
 ## Special Note
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
