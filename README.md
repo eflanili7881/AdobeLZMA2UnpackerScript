@@ -14,14 +14,14 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 
 ## Instructions
 - Create adobeTemp directory on root of C drive. Maybe drive section change due to Adobe Creative Cloud's default install location settings.
-- Edit script's destination directory to your desire.
-  - On default, it's D:\AdobeLZMA2. Change it to something you desire. I suggest fast medium location for unpack destination.
 - Run this script as admin. You'll see robocopy doing it's work.
 - Run your desired Zip-Lzma2-compressed Adobe installer.
 - Wait to install to be complete.
 - You'll see destination directory contains bunch of folders starting with ETR. These are the unpacked assets copied from adobeTemp directory.
   - Be sure to verify file and folder count from 7-Zip or other archiving software. Sometimes even with constant spawning of robocopy, some files may missing. You can try to find these missing files from installed location of Adobe program and copy it to appropriate location on extracted installer assets.
-    - Especially on Adobe XD and Fresco (Very especially CSDKConfigurator.exe (this file cannot be found after installation AFAIK.) and icons directory.).
+    - Especially on Adobe XD and Fresco (Very especially CSDKConfigurator.exe (this file and icons directory)).
+      - These files can be found on **C:\Program Files\Common Files\Adobe** ([AdobeCommon] variable).
+      - Under that directory, look for app name that you're gonna unpack (i.e. Adobe Fresco).
 
 ## Special Note
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
