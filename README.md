@@ -40,6 +40,9 @@ But they will be extracted to adobeTemp folder during installation as raw into b
   - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
     - Or you can search and replace "condition" with anything else that isn't conflicting with any variable. This also allows to unpack all architectures and Windows 7 special packages.
 - Some installers have resources\AppInfo.json file (i.e. Photoshop and Premiere Elements 2023). If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version **(>=5.6.0.788)** and HyperDrive installer gives "Installer is corrupt" error. To solve this, use HyperDrive installer engine with older version from one of the installers (**4.5.0.300=<x<=5.5.0.617** should work.).
+  - If you ignore this, you'll see this screen:
+
+    ![image](https://github.com/osmankovan123/AdobeLZMA2UnpackerScript/assets/44976117/92a70fdc-9cf3-4591-bdd3-76724cc06bf4)
   - Or if you want most up to date HyperDrive installer engine, you can just replace Set-up.exe on root of the installer media with version **4.5.0.300=<x<=5.5.0.617**.
   - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
 - If you're gonna use **5.3.5.518(or 5.3.5.499 if it's first pre-release ARM 64-Bit release)=<x<=5.5.0.617**, be sure to put contents of packages folder to common/win64/packages (or winarm64 if you're gonna use ARM 64-bit version of Creative Cloud) and contents of resources folder (except content directory) to resources/win64 (or winarm64 if you're gonna use ARM 64-bit version of Creative Cloud) inside installation media.
