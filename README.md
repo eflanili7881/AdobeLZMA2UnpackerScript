@@ -21,8 +21,7 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 But they will be extracted to adobeTemp folder during installation as raw into bunch of folders starting with ETR prefix into C:\adobeTemp or maybe another adobeTemp folder on other drives root that depends on Creative Cloud settings. They can be tricky to get these installer files as when install of specific package was finished, they will be deleted. This script constantly summons robocopy with no cooldown as any file enters to C:\adobeTemp or any folder you specified in script and copies unpacked Adobe assets from adobeTemp folder to desired location, so be sure to have beefy computer if you can. It copies only new files so new files instantly copied to desired location as Adobe Installer copies unpacked assets to adobeTemp directory.
 
 ## Instructions
-- Create adobeTemp directory on root of C drive. Maybe drive section change due to Adobe Creative Cloud's default install location settings.
-- Run this script as admin. You'll see robocopy doing it's work.
+- Run this script as admin. You'll see robocopy doing it's work. Script will create folders depending on your entries.
 - Run your desired Zip-Lzma2-compressed Adobe installer.
 - Wait to install to be complete.
 - You'll see destination directory contains bunch of folders starting with ETR. These are the unpacked assets copied from adobeTemp directory.
