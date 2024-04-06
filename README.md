@@ -16,6 +16,8 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 
   - But even if you try to repack directly unpacked assets with 7-Zip or other archive software on 7-Zip as Store (-mx0 on 7-Zip), it gives "app cannot be installed at this time, error 127" error. It means "package cannot be extracted" error on https://helpx.adobe.com/creative-cloud/kb/troubleshoot-download-install-logs.html#error127.
 
+    ![image](https://github.com/osmankovan123/AdobeLZMA2UnpackerScript/assets/44976117/052c5eef-b357-4747-a313-acb9472e0dcf)
+
 But they will be extracted to adobeTemp folder during installation as raw into bunch of folders starting with ETR prefix into C:\adobeTemp or maybe another adobeTemp folder on other drives root that depends on Creative Cloud settings. They can be tricky to get these installer files as when install of specific package was finished, they will be deleted. This script constantly summons robocopy with no cooldown as any file enters to C:\adobeTemp or any folder you specified in script and copies unpacked Adobe assets from adobeTemp folder to desired location, so be sure to have beefy computer if you can. It copies only new files so new files instantly copied to desired location as Adobe Installer copies unpacked assets to adobeTemp directory.
 
 ## Instructions
