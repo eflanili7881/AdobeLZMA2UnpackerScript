@@ -51,7 +51,7 @@ But they will be extracted to adobeTemp folder during installation as raw into b
   | :-: | :-: |
   | **packages** | **common\win64(or winarm64)\packages** |
   | products | products |
-  | **resources** | **resources\win64(or winarm64)(AdobePIM.dll and UpdateRedirector.dat moved here.)** |
+  | **resources** | **resources\win64(or winarm64)(Only AdobePIM.dll and UpdateRedirector.dat moved here.)** |
   | Set-up.exe | Set-up.exe |
   - If you skip this, the installer will say "Installer file may be damaged" as it can't find "common" directory inside of installation media.
 
