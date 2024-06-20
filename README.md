@@ -10,7 +10,7 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 - Adobe Systems Incorporated for providing Zip-Lzma2-compressed applications.
 
 ## What does this script do?
-Normally, packed assets with Zip-Lzma2 method, folder and file structure can be seen via any archiving software, but cannot be directly unpacked via 7-Zip or other archive software that I know in existence. And these packages expanded size and compressed size are equal and compression method is Store on these packages (i.e. Adobe XD 42.0.22.11 as it's the first version to use Zip-Lzma2 compression below).
+Normally, packed assets with Zip-Lzma2 method, folder and file structure can be seen via any archiving software, but cannot be directly unpacked via 7-Zip or other archive software that I know in existence. And these packages expanded size and compressed size are equal and compression method is Store on these packages (i.e. Adobe XD 42.0.22.11 as it's the first Adobe XD version to use Zip-Lzma2 compression below).
 
 ![image](https://github.com/osmankovan123/AdobeLZMA2UnpackerScript/assets/44976117/594382b9-0db8-496d-941a-8517a9068e65)
 
