@@ -44,6 +44,9 @@ But they will be extracted to adobeTemp folder during installation as raw into b
       |4.3.0.90|https://web.archive.org/web/20200506000515/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
       |4.3.0.134|https://web.archive.org/web/20201030195736/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
       |4.3.0.158|https://web.archive.org/web/20211019235249/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
+      |4.3.0.230|https://web.archive.org/web/20220113180201/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
+      |4.3.0.251|https://web.archive.org/web/20220414180715/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
+      |4.3.0.253|https://web.archive.org/web/20220824095901/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
       |4.3.0.278|https://web.archive.org/web/20230113090352/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
       |4.3.0.395|https://web.archive.org/web/20230916141417/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
       |4.3.0.834|https://web.archive.org/web/20241105115843/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
