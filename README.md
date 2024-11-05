@@ -37,8 +37,8 @@ But they will be extracted to adobeTemp folder during installation as raw into b
   - You can pack and install these assets with the script I wrote at https://github.com/osmankovan123/AdobeRepackerAndInstallerScript/tree/HyperDrive-win
 - I suggest run this script on freshly installed Windows due to HyperDrive installer will skip already installed packages. Therefore, some packages may not be unpacked.
   - You can uninstall every bits of Adobe apps via Adobe Creative Cloud Cleaner Tool at https://helpx.adobe.com/enterprise/kb/cc-cleaner-tool-for-enterprise-users.html .
-    - If web page isn't accessible, try downloading from direct link at https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe (it only downloads latest version; if you need another specific version, you can check Wayback Machine for link https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe).
-    - Or if this was deleted, you can download specific versions from Wayback Machine below:
+    - If web page isn't accessible, try downloading from direct link at https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe
+    - Above link only downloads latest version; if you need another specific version, you can check Wayback Machine for link https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe or you can download specific versions from Wayback Machine below:
       |Version|Link|
       |:-:|:-:|
       |4.3.0.395|https://web.archive.org/web/20230916141417/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
