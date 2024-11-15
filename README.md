@@ -12,11 +12,11 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 ## What does this script do?
 Normally, packed assets with Zip-Lzma2 method, folder and file structure can be seen via any archiving software, but cannot be directly unpacked via 7-Zip or other archive software that I know in existence. And these packages expanded size and compressed size are equal and compression method is Store on these packages (i.e. Adobe XD 42.0.22.11 as it's the first Adobe XD version to use Zip-Lzma2 compression below).
 
-![image](https://github.com/osmankovan123/AdobeLZMA2UnpackerScript/assets/44976117/594382b9-0db8-496d-941a-8517a9068e65)
+![image](https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/assets/44976117/594382b9-0db8-496d-941a-8517a9068e65)
 
   - But even if you try to repack directly unpacked assets with 7-Zip or other archive software on 7-Zip as Store (-mx0 on 7-Zip), it gives "app cannot be installed at this time, error 127" error. It means "package cannot be extracted" error on https://helpx.adobe.com/creative-cloud/kb/troubleshoot-download-install-logs.html#error127.
 
-    ![image](https://github.com/osmankovan123/AdobeLZMA2UnpackerScript/assets/44976117/052c5eef-b357-4747-a313-acb9472e0dcf)
+    ![image](https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/assets/44976117/052c5eef-b357-4747-a313-acb9472e0dcf)
 
     ![image](https://github.com/user-attachments/assets/5b31ab29-edf2-4303-8719-87388a61f9df)
 
@@ -42,7 +42,7 @@ They can be tricky to get these installer files as when install of specific pack
 
 ## Special Note
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
-  - You can pack and install these assets with the script I wrote at https://github.com/osmankovan123/AdobeRepackerAndInstallerScript/tree/HyperDrive-win
+  - You can pack and install these assets with the script I wrote at https://github.com/eflanili7881/AdobeRepackerAndInstallerScript/tree/HyperDrive-win
 - I suggest run this script on freshly installed Windows due to HyperDrive installer will skip already installed packages. Therefore, some packages may not be unpacked.
   - You can uninstall every bits of Adobe apps via Adobe Creative Cloud Cleaner Tool at https://helpx.adobe.com/enterprise/kb/cc-cleaner-tool-for-enterprise-users.html .
     - If web page isn't accessible, try downloading from direct link at https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe
@@ -63,7 +63,7 @@ They can be tricky to get these installer files as when install of specific pack
 - Some installers have resources\AppInfo.json file (i.e. Photoshop and Premiere Elements 2023). If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version **(>=5.6.0.788)** and HyperDrive installer gives "Installer is corrupt" error. To solve this, use HyperDrive installer engine with older version from one of the installers (**4.5.0.300=<x<=5.5.0.617** should work.).
   - If you ignore this, you'll see this screen:
 
-    ![image](https://github.com/osmankovan123/AdobeLZMA2UnpackerScript/assets/44976117/92a70fdc-9cf3-4591-bdd3-76724cc06bf4)
+    ![image](https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/assets/44976117/92a70fdc-9cf3-4591-bdd3-76724cc06bf4)
     
     - If you want most up to date HyperDrive installer engine, you can just replace Set-up.exe on root of the installer media with version **4.5.0.300=<x<=5.5.0.617** from **/packages/ADC/HDBox/HDBox.pima/Set-up.exe** that you get from standard Adobe Creative Cloud installer version **4.5.0.300=<x<=5.5.0.617**.
   - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
@@ -76,6 +76,6 @@ They can be tricky to get these installer files as when install of specific pack
   | Set-up.exe | Set-up.exe |
   - If you skip this, the installer will say "Installer file may be damaged" as it can't find "common" directory inside of installation media.
 
-    ![image](https://github.com/osmankovan123/AdobeLZMA2UnpackerScript/assets/44976117/03447c52-e379-4d12-8d96-a1ddd3f9ca43)
+    ![image](https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/assets/44976117/03447c52-e379-4d12-8d96-a1ddd3f9ca43)
     
     - Or you can use Set-up.exe from 4.5.0.300=<x<=5.3.1.470 to use old layout.
