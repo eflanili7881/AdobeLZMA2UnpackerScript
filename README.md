@@ -20,7 +20,11 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 
     ![image](https://github.com/user-attachments/assets/5b31ab29-edf2-4303-8719-87388a61f9df)
 
-But they will be extracted to adobeTemp folder during installation as raw into bunch of folders starting with ETR prefix into C:\adobeTemp or maybe another adobeTemp folder on other drives root that depends on Creative Cloud settings. They can be tricky to get these installer files as when install of specific package was finished, they will be deleted. This script constantly summons robocopy with no cooldown as any file enters to C:\adobeTemp or any folder you specified in script and copies unpacked Adobe assets from adobeTemp folder to desired location, so be sure to have beefy computer if you can. It copies only new files so new files instantly copied to desired location as Adobe Installer copies unpacked assets to adobeTemp directory.
+But they will be extracted to adobeTemp folder during installation as raw into bunch of folders starting with ETR prefix into C:\adobeTemp or maybe another adobeTemp folder on other drives root that depends on Creative Cloud settings.
+
+![image](https://github.com/user-attachments/assets/e3e18b64-e3a0-41c5-bba0-127f0edc48af)
+
+They can be tricky to get these installer files as when install of specific package was finished, they will be deleted. This script constantly summons robocopy with no cooldown as any file enters to C:\adobeTemp or any folder you specified in script and copies unpacked Adobe assets from adobeTemp folder to desired location, so be sure to have beefy computer if you can. It copies only new files so new files instantly copied to desired location as Adobe Installer copies unpacked assets to adobeTemp directory.
 
 ## Instructions
 - Run this script as admin. You'll see robocopy doing it's work. Script will create folders depending on your entries.
