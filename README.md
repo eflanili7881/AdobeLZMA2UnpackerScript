@@ -65,10 +65,10 @@ They can be tricky to get these installer files as when install of specific pack
 
     ![image](https://github.com/osmankovan123/AdobeLZMA2UnpackerScript/assets/44976117/92a70fdc-9cf3-4591-bdd3-76724cc06bf4)
     
-    - Or if you want most up to date HyperDrive installer engine, you can just replace Set-up.exe on root of the installer media with version **4.5.0.300=<x<=5.5.0.617**.
+    - If you want most up to date HyperDrive installer engine, you can just replace Set-up.exe on root of the installer media with version **4.5.0.300=<x<=5.5.0.617** from **/packages/ADC/HDBox/HDBox.pima/Set-up.exe** that you get from standard Adobe Creative Cloud installer version **4.5.0.300=<x<=5.5.0.617**.
   - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
-- If you're gonna use **5.3.5.518(or 5.3.5.499 if it's first pre-release ARM 64-Bit release)=<x<=5.5.0.617**, be sure to put contents of packages folder to common/win64/packages (or winarm64 if you're gonna use ARM 64-bit version of Creative Cloud) and contents of resources folder (except content directory) to resources/win64 (or winarm64 if you're gonna use ARM 64-bit version of Creative Cloud) inside installation media. Changed sections marked as bold.
-  | Old install structure **(<5.3.5.518)** | New install structure **(>=5.3.5.518)** |
+- If you're gonna use **5.3.5.518 (or 5.3.5.499 if it's first pre-release ARM 64-Bit release)=<x<=5.5.0.617**, be sure to put contents of packages folder to common/win64/packages (or winarm64 if you're gonna use ARM 64-bit version of Creative Cloud) and contents of resources folder (except content directory) to resources/win64 (or winarm64 if you're gonna use ARM 64-bit version of Creative Cloud) inside installation media. Changed sections marked as bold.
+  | Old install structure **(<5.3.5.518)** | New install structure **(>=5.3.5.518 (or 5.3.5.499 if it's first pre-release ARM 64-Bit release))** |
   | :-: | :-: |
   | **packages** | **common\win64(or winarm64)\packages** |
   | products | products |
@@ -78,4 +78,4 @@ They can be tricky to get these installer files as when install of specific pack
 
     ![image](https://github.com/osmankovan123/AdobeLZMA2UnpackerScript/assets/44976117/03447c52-e379-4d12-8d96-a1ddd3f9ca43)
     
-    - Or you can use Set-up.exe from 4.5.0.300=<x<=5.3.1.470.
+    - Or you can use Set-up.exe from 4.5.0.300=<x<=5.3.1.470 to use old layout.
