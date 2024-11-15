@@ -78,4 +78,4 @@ They can be tricky to get these installer files as when install of specific pack
 
     ![image](https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/assets/44976117/03447c52-e379-4d12-8d96-a1ddd3f9ca43)
     
-    - Or you can use Set-up.exe from 4.5.0.300=<x<=5.3.1.470 to use old layout.
+    - If you want to use old install media layout, you can just replace Set-up.exe on root of the installer media with version **4.5.0.300=<x<=5.3.1.470** from **/packages/ADC/HDBox/HDBox.pima/Set-up.exe** that you get from standard Adobe Creative Cloud installer version **4.5.0.300=<x<=5.3.1.470**.
