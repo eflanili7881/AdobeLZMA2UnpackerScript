@@ -39,6 +39,7 @@ They can be tricky to get these installer files as when install of specific pack
       - These files can be found on **C:\Program Files\Common Files\Adobe** ([AdobeCommon] variable).
       - Under that directory, look for app name that you're gonna unpack (i.e. Adobe Fresco).
         - Or you can delete every file under **C:\Program Files\Common Files\Adobe\ (app name you're gonna unpack)** if you're gonna want unpack packages in one-go.
+- After that, you can close command prompt.
 
 ## Special Note
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
