@@ -30,7 +30,28 @@ They can be tricky to get these installer files as when ~~install~~ (extraction)
 
       ![image](https://github.com/user-attachments/assets/0fb6fbba-c5ad-41bb-91cc-80f805549ee4)
 
-    - If you patch HDPIM.dll on **C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\HDPIM.dll** that I'm gonna mention it on "To patch dll's", you can at least preserve directory structure and most importantly, *.pimx file that's extracted to **adobeTemp** directory.
+    - If you patch HDPIM.dll on **C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\HDPIM.dll** that I'm gonna mention it on "To patch dll's" section, you can at least preserve directory structure and most importantly, *.pimx file that's extracted to **adobeTemp** directory.
+      - With that, you can move files by manual from directories back to **adobeTemp** with guidance from *.zip and *.pimx file.
+      - As UWP installers (.appx files) will not be moved (i think by **ignoreAsset="true"** argument), in example for Adobe XD (**SparklerApp** directory), they'll be preserved on **adobeTemp** directory.
+
+        ![image](https://github.com/user-attachments/assets/16837dc3-d4a9-4157-92d8-84d75a9d0d47)
+
+        - But **SupportAssets** and **AEPlugin** will be moved to respective folders.
+          - AEPlugin directory for Adobe XD 57.1.12.2.
+            - On **C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\Public\AEXD-57.1.12.2**
+           
+              ![image](https://github.com/user-attachments/assets/7df913de-6333-41c5-9338-a35172db263f)
+
+          - SupportAssets directory for Adobe XD 57.1.12.2.
+            - On **C:\Program Files\Common Files\Adobe\Adobe XD**
+           
+              ![image](https://github.com/user-attachments/assets/b692f099-8874-4eeb-946a-b93acf3ccf27)
+
+              - **csdkConfiguratorLog.txt** will be created later by command specified in *.pimx file.
+             
+                ![image](https://github.com/user-attachments/assets/be8e752d-d25b-4b32-b2c9-65c7a0df3d27)
+
+              - It's not necessary to backup this file.
 ## Instructions
 - Run this script as admin. You'll see robocopy doing it's work. Script will create folders depending on your entries.
 - Run your desired Zip-Lzma2-compressed Adobe installer.
