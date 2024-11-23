@@ -28,7 +28,7 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 ## Special Note about Script
 - I tried several approaches, but due to filesystem hierarchy?, I cannot copy files fast enough to temporary location (even with while true with sleep 0 loop).
   - My record with Adobe Audition CC 2019 version 12.0.0.141 was ~800MB out of ~1285MB.
-- I will release script, but I encourage you to apply steps from https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins.
+- I will release the script, but I recommending you to apply steps from https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins.
 ## Special Note
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
   - You can pack and install these assets with the script I wrote at https://github.com/eflanili7881/AdobeRepackerAndInstallerScript/tree/HyperDrive-mac
