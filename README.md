@@ -10,5 +10,9 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 - Adobe Systems Incorporated for providing Zip-Lzma2-compressed applications.
 
 # Branches
+## For Macintosh-based Unpacker (script noy uploaded)
+https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac
 ## For Windows-based Unpacker
 https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-win
+## For Patched Bins For Windows-based PCs
+https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-win-patchedbins
