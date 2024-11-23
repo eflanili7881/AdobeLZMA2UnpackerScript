@@ -85,6 +85,10 @@ They can be tricky to get these installer files as when ~~install~~ (extraction)
       |4.3.0.253|https://web.archive.org/web/20220824095901/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
       |4.3.0.278|https://web.archive.org/web/20230113090352/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
       |4.3.0.395|https://web.archive.org/web/20230916141417/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
+      |4.3.0.434|https://web.archive.org/web/20231127172352/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
+      |4.3.0.519|https://web.archive.org/web/20231217183526/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
+      |4.3.0.591|https://web.archive.org/web/20240324220432/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
+      |4.3.0.680|https://web.archive.org/web/20240525012236/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
       |4.3.0.834|https://web.archive.org/web/20241105115843/https://swupmf.adobe.com/webfeed/CleanerTool/win/AdobeCreativeCloudCleanerTool.exe|
   - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
     - Or you can search and replace "condition" with anything else that isn't conflicting with any variable. This also allows to unpack all architectures and Windows 7 special packages.
