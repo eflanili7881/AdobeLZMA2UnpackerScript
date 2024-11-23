@@ -27,6 +27,7 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
   - If you patch HDPIM.dylib on **/Library/Application Support/Adobe/Adobe Desktop Common/HDBox/HDPIM.dylib** that I'm gonna mention it on "To patch dylib's" section on https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins#to-patch-dylibs, you can at least preserve directory structure and most importantly, *.pimx file that's extracted to **adobeTemp** directory.
 ## Special Note about Script
 - I tried several approaches, but due to filesystem hierarchy?, I cannot copy files fast enough to temporary location (even with while true with sleep 0 loop).
+  - My record with Adobe Audition CC 2019 version 12.0.0.141 was ~800MB out of ~1285MB.
 - I will release script, but I encourage you to apply steps from https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins.
 ## Special Note
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
@@ -46,8 +47,8 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
       |4.3.0.228|https://web.archive.org/web/20230130232631/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
       |4.3.0.231|https://web.archive.org/web/20230315092416/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
       |4.3.0.519|https://web.archive.org/web/20231227054016/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
-      |4.3.0.591|https://web.archive.org/web/20240324222213/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|Last version for macOS High Sierra|
-      |4.3.0.680|https://web.archive.org/web/20240516194139/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
+      |4.3.0.591|https://web.archive.org/web/20240324222213/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|Last version for macOS High Sierra and Mojave|
+      |4.3.0.680|https://web.archive.org/web/20240516194139/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|First version to require macOS Catalina|
       |4.3.0.834|https://web.archive.org/web/20241123142301/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
   - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
     - Or you can search and replace "condition" with anything else that isn't conflicting with any variable. This also allows to unpack all architectures and other special packages.
