@@ -36,6 +36,7 @@ They can be tricky to get these installer files as when ~~install~~ (extraction)
 
         ![image](https://github.com/user-attachments/assets/16837dc3-d4a9-4157-92d8-84d75a9d0d47)
 
+        - Sizes will be different due to Zip-Lzma2 compression method. Important thing is folder and file count should be same.
         - But **SupportAssets** and **AEPlugin** will be moved to respective folders.
           - AEPlugin directory for Adobe XD 57.1.12.2.
             - On **C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\Public\AEXD-57.1.12.2**
