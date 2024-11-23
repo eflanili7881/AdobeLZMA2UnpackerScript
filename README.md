@@ -1,4 +1,4 @@
-# Adobe LZMA2 Unpacker Script
+# Adobe LZMA2 Unpacker Script - Windows
 A .bat script that unpacks LZMA2-compressed Adobe HyperDrive installers to desired location.
 
 # CAUTION!
