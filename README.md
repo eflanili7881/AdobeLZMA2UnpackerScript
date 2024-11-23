@@ -34,19 +34,19 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
   - You can uninstall every bits of Adobe apps via Adobe Creative Cloud Cleaner Tool at https://helpx.adobe.com/enterprise/kb/cc-cleaner-tool-for-enterprise-users.html.
     - If web page isn't accessible, try downloading from direct link at https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg.
     - Above link only downloads latest version; if you need another specific version, you can check Wayback Machine for link https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg or you can download specific versions from Wayback Machine below:
-      |Version|Link|
-      |:-:|:-:|
-      |4.3.0.113|https://web.archive.org/web/20200625170051/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|
-      |4.3.0.134|https://web.archive.org/web/20200813063747/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|
-      |4.3.0.146|https://web.archive.org/web/20201029152543/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|
-      |4.3.0.151|https://web.archive.org/web/20210321222552/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|
-      |4.3.0.204|https://web.archive.org/web/20220824095902/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|
-      |4.3.0.228|https://web.archive.org/web/20230130232631/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|
-      |4.3.0.231|https://web.archive.org/web/20230315092416/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|
-      |4.3.0.519|https://web.archive.org/web/20231227054016/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|
-      |4.3.0.591|https://web.archive.org/web/20240324222213/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|
-      |4.3.0.680|https://web.archive.org/web/20240516194139/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|
-      |4.3.0.834|https://web.archive.org/web/20241123142301/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|  
+      |Version|Link|Note|
+      |:-:|:-:|:-:|
+      |4.3.0.113|https://web.archive.org/web/20200625170051/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
+      |4.3.0.134|https://web.archive.org/web/20200813063747/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
+      |4.3.0.146|https://web.archive.org/web/20201029152543/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
+      |4.3.0.151|https://web.archive.org/web/20210321222552/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
+      |4.3.0.204|https://web.archive.org/web/20220824095902/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
+      |4.3.0.228|https://web.archive.org/web/20230130232631/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
+      |4.3.0.231|https://web.archive.org/web/20230315092416/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
+      |4.3.0.519|https://web.archive.org/web/20231227054016/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
+      |4.3.0.591|https://web.archive.org/web/20240324222213/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|Last version for macOS High Sierra|
+      |4.3.0.680|https://web.archive.org/web/20240516194139/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
+      |4.3.0.834|https://web.archive.org/web/20241123142301/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
   - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
     - Or you can search and replace "condition" with anything else that isn't conflicting with any variable. This also allows to unpack all architectures and other special packages.
 - Some installers have resources\AppInfo.json file (i.e. Photoshop and Premiere Elements 2023). If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version **(>=5.6.0.788)** and HyperDrive installer gives "Installer is corrupt" error. To solve this, use HyperDrive installer engine with older version from one of the installers (**4.5.0.300=<x<=5.5.0.617** should work.).
