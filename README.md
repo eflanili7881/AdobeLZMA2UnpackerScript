@@ -16,3 +16,5 @@ https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac
 https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-win
 ## For Patched Bins For Windows-based PCs
 https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-win-patchedbins
+## For Patched Bins For Macintosh-based PCs
+https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins
