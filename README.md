@@ -12,7 +12,7 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 ## To patch dll's
 - Download Cutter from https://cutter.re or https://github.com/rizinorg/cutter/releases
 - Install Cutter and IDA Pro 6.5 or newer.
-  # - On HDPIM.dll (version 6.4.0.359)
+# - On HDPIM.dll (version 6.4.0.359)
   - 2 address needed to be patched this time.
     - Open AdobePIM.dll with IDA Pro 6.5 or newer with Portable executable for 80386 (PE) (pe64.dll) decompiler.
     - On IDA Pro, search for string **FileUtils**.
