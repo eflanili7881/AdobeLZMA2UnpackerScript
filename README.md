@@ -132,7 +132,7 @@ They can be tricky to get these installer files as when ~~install~~ (extraction)
 
     - Look for address **0x100e251a** (0x1 address before the result that come from previous step.)
     - You got last location to patch. Take note this address.
-      - This address prevents deletion of folders in **adobeTemp** folder.
+      - This address prevents deletion of folder structure in **adobeTemp** folder.
     - You got all necessary addresses to patch on Clutter.
     - Open HDPIM.dll on Cutter with experimental (aaaa) mode and in write mode (-w).
     - Jump to address 0x100e2351.
