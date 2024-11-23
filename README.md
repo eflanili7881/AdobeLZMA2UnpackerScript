@@ -26,13 +26,15 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 - They can be tricky to get these installer files as when extraction of specific package was finished, they will be moved to directories that specified in *.pimx file. This script constantly summons cp with no cooldown as any file enters to /.adobeTemp or any folder you specified in script and copies unpacked Adobe assets from adobeTemp folder to desired location, so be sure to have beefy computer if you can. It copies only new files so new files instantly copied to desired location as Adobe Installer copies unpacked assets to adobeTemp directory.
   - If you patch HDPIM.dylib on **/Library/Application Support/Adobe/Adobe Desktop Common/HDBox/HDPIM.dylib** that I'm gonna mention it on "To patch dylib's" section on https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins#to-patch-dylibs, you can at least preserve directory structure and most importantly, *.pimx file that's extracted to **adobeTemp** directory.
 ## Special Note about Script
--
+- I tried several approaches, but due to filesystem hierarchy?, I cannot copy files fast enough to temporary location (even with while true with sleep 0 loop).
+- I will release script, but I encourage you to apply steps from https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins.
 ## Special Note
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
   - You can pack and install these assets with the script I wrote at https://github.com/eflanili7881/AdobeRepackerAndInstallerScript/tree/HyperDrive-mac
 - I suggest run this script on freshly installed macOS due to HyperDrive installer will skip already installed packages. Therefore, some packages may not be unpacked.
   - You can uninstall every bits of Adobe apps via Adobe Creative Cloud Cleaner Tool at https://helpx.adobe.com/enterprise/kb/cc-cleaner-tool-for-enterprise-users.html.
     - If web page isn't accessible, try downloading from direct link at https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg.
+      - You can try it run OS from HDD (Creative Cloud forces user to install OS drive) or change adobeTemp folder to HDD?, then set copy destination to a fast medium (like NVMe SSD).
     - Above link only downloads latest version; if you need another specific version, you can check Wayback Machine for link https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg or you can download specific versions from Wayback Machine below:
       |Version|Link|Note|
       |:-:|:-:|:-:|
