@@ -24,8 +24,13 @@ But they will be extracted to adobeTemp folder during installation as raw into b
 
 ![image](https://github.com/user-attachments/assets/e3e18b64-e3a0-41c5-bba0-127f0edc48af)
 
-They can be tricky to get these installer files as when install of specific package was finished, they will be deleted. This script constantly summons robocopy with no cooldown as any file enters to C:\adobeTemp or any folder you specified in script and copies unpacked Adobe assets from adobeTemp folder to desired location, so be sure to have beefy computer if you can. It copies only new files so new files instantly copied to desired location as Adobe Installer copies unpacked assets to adobeTemp directory.
+They can be tricky to get these installer files as when ~~install~~ (extraction) of specific package was finished, they will be ~~deleted~~ (moved to directories that specified in *.pimx file). This script constantly summons robocopy with no cooldown as any file enters to C:\adobeTemp or any folder you specified in script and copies unpacked Adobe assets from adobeTemp folder to desired location, so be sure to have beefy computer if you can. It copies only new files so new files instantly copied to desired location as Adobe Installer copies unpacked assets to adobeTemp directory.
+  - When I examined install process, files will not be deleted. Instead, they will be moved to directories that specified in *.pimx file.
+    - Example from Adobe XD 57.1.12.2:
 
+      ![image](https://github.com/user-attachments/assets/0fb6fbba-c5ad-41bb-91cc-80f805549ee4)
+
+    - If you patch HDPIM.dll on **C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\HDPIM.dll** that I'm gonna mention it on "To patch dll's", you can at least preserve directory structure and most importantly, *.pimx file that's extracted to **adobeTemp** directory.
 ## Instructions
 - Run this script as admin. You'll see robocopy doing it's work. Script will create folders depending on your entries.
 - Run your desired Zip-Lzma2-compressed Adobe installer.
