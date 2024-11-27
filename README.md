@@ -12,9 +12,9 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 # Branches
 ## For Macintosh-based Unpacker (script not uploaded)
 https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac
+## For Patched Bins For Macintosh-based PCs
+https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins
 ## For Windows-based Unpacker
 https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-win
 ## For Patched Bins For Windows-based PCs
 https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-win-patchedbins
-## For Patched Bins For Macintosh-based PCs
-https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins
