@@ -25,10 +25,17 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 
 - They can be tricky to get these installer files as when extraction of specific package was finished, they will be moved to directories that specified in *.pimx file. This script constantly summons cp with no cooldown as any file enters to /.adobeTemp or any folder you specified in script and copies unpacked Adobe assets from adobeTemp folder to desired location, so be sure to have beefy computer if you can. It copies only new files so new files instantly copied to desired location as Adobe Installer copies unpacked assets to adobeTemp directory.
   - If you patch HDPIM.dylib on **/Library/Application Support/Adobe/Adobe Desktop Common/HDBox/HDPIM.dylib** that I'm gonna mention it on "To patch dylib's" section on https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins#to-patch-dylibs, you can at least preserve directory structure and most importantly, *.pimx file that's extracted to **adobeTemp** directory.
+
 ## Special Note about Script
 - I tried several approaches, but due to filesystem hierarchy?, I cannot copy files fast enough to temporary location (even with while true with sleep 0 loop).
-  - My record with Adobe Audition CC 2019 version 12.0.0.141 was ~800MB out of ~1285MB.
+  - My record with Adobe Audition CC 2019 version 12.0.0.141 and **ditto** copy tool was ~1284MB out of ~1285MB.
+    - Pretty close, I know.
+    - But if I remember right, it has problems with symbolic links.
+  - My record with Adobe Audition CC 2019 version 12.0.0.141 and **cp** copy tool was ~800MB out of ~1285MB.
+    - It misses almost 37% of files.
+    - But it copies symbolic links correctly.
 - I will release the script, but I recommending you to apply steps from https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins.
+
 ## Special Note
 - Be sure to change Zip-Lzma2 to Zip-Deflated on application.json to install these unpacked assets.
   - You can pack and install these assets with the script I wrote at https://github.com/eflanili7881/AdobeRepackerAndInstallerScript/tree/HyperDrive-mac
