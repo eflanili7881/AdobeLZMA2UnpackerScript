@@ -17,24 +17,24 @@ Please, don't use this script for piracy things. I wrote this script for who wan
   - On IDA Pro, search for string **Successfully deleted directory**.
   - Select the result on **0x18a354** or **0x18a4c6**.
 
-    ![image](https://github.com/user-attachments/assets/37f0de23-582c-410e-95fd-4e0bdece6d3b)
+    ![image](./pictures/389207391-37f0de23-582c-410e-95fd-4e0bdece6d3b.png)
 
   - Locate the box's start address that's connected to both 2 results that come from previous step (in case, it's 0x18a2a7).
 
-    ![image](https://github.com/user-attachments/assets/9843f85a-f609-4a9c-9c42-e0cdf74b0a88)
+    ![image](./pictures/389207602-9843f85a-f609-4a9c-9c42-e0cdf74b0a88.png)
 
-    ![image](https://github.com/user-attachments/assets/22c4bdc6-9edc-425d-91b9-ad147ab0d7c9)
+    ![image](./pictures/389207547-22c4bdc6-9edc-425d-91b9-ad147ab0d7c9.png)
 
     - This address prevents deletion of folder structure in adobeTemp folder and *.pimx file.
   - You've got necessary address to change on Cutter.
   - Open HDPIM.dylib on Cutter with experimental (aaaa) mode and in write mode (-w).
   - Jump to address 0x18a2a7.
 
-    ![image](https://github.com/user-attachments/assets/0b00a7b3-15e0-450f-8512-dd5481590b37)
+    ![image](./pictures/389209887-0b00a7b3-15e0-450f-8512-dd5481590b37.png)
 
   - Change **mov rsi, qword [rip + 0x2170da]** to **jmp 0x18a3b8** with disabling *Fill all remaining bytes with NOP opcodes*.
   - When you reload file with same settings, graph will turn into this:
    
-    ![image](https://github.com/user-attachments/assets/a99de453-b2d8-45d1-959e-a493f6e5ba89)
+    ![image](./pictures/389210162-a99de453-b2d8-45d1-959e-a493f6e5ba89.png)
 
   - With that, you patched code that deletes directory structure on **adobeTemp** folder and *.pimx file.
