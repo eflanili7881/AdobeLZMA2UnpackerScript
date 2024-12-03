@@ -12,45 +12,45 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 ## What does this script do?
 Normally, packed assets with Zip-Lzma2 method, folder and file structure can be seen via any archiving software, but cannot be directly unpacked via 7-Zip or other archive software that I know in existence. And these packages expanded size and compressed size are equal and compression method is Store on these packages (i.e. Adobe XD 42.0.22.11 as it's the first Adobe XD version to use Zip-Lzma2 compression below).
 
-![image](https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/assets/44976117/594382b9-0db8-496d-941a-8517a9068e65)
+![image](./pictures/319755380-594382b9-0db8-496d-941a-8517a9068e65.png)
 
   - But even if you try to repack directly unpacked assets with 7-Zip or other archive software on 7-Zip as Store (-mx0 on 7-Zip), it gives "app cannot be installed at this time, error 127" error. It means "package cannot be extracted" error on https://helpx.adobe.com/creative-cloud/kb/troubleshoot-download-install-logs.html#error127.
 
-    ![image](https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/assets/44976117/052c5eef-b357-4747-a313-acb9472e0dcf)
+    ![image](./pictures/320204762-052c5eef-b357-4747-a313-acb9472e0dcf.png)
 
-    ![image](https://github.com/user-attachments/assets/5b31ab29-edf2-4303-8719-87388a61f9df)
+    ![image](./pictures/379877333-5b31ab29-edf2-4303-8719-87388a61f9df.png)
 
 But they will be extracted to adobeTemp folder during installation as raw into bunch of folders starting with ETR prefix into C:\adobeTemp or maybe another adobeTemp folder on other drives root that depends on Creative Cloud settings.
 
-![image](https://github.com/user-attachments/assets/e3e18b64-e3a0-41c5-bba0-127f0edc48af)
+![image](./pictures/385400098-e3e18b64-e3a0-41c5-bba0-127f0edc48af.png)
 
 They can be tricky to get these installer files as when ~~install~~ (extraction) of specific package was finished, they will be ~~deleted~~ (moved to directories that specified in *.pimx file). This script constantly summons robocopy with no cooldown as any file enters to C:\adobeTemp or any folder you specified in script and copies unpacked Adobe assets from adobeTemp folder to desired location, so be sure to have beefy computer if you can. It copies only new files so new files instantly copied to desired location as Adobe Installer copies unpacked assets to adobeTemp directory.
   - When I examined install process, files will not be deleted. Instead, they will be moved to directories that specified in *.pimx file.
     - Example from Adobe XD 57.1.12.2:
 
-      ![image](https://github.com/user-attachments/assets/0fb6fbba-c5ad-41bb-91cc-80f805549ee4)
+      ![image](./pictures/389186979-0fb6fbba-c5ad-41bb-91cc-80f805549ee4.png)
 
     - If you patch HDPIM.dll on **C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\HDPIM.dll** that I'm gonna mention it on "To patch dll's" section on https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-win-patchedbins#to-patch-dlls, you can at least preserve directory structure and most importantly, *.pimx file that's extracted to **adobeTemp** directory.
       - With that, you can move files by manual from directories back to **adobeTemp** with guidance from *.zip and *.pimx file.
       - As UWP installers (.appx files) will not be moved (i think by **ignoreAsset="true"** argument), in example for Adobe XD (**SparklerApp** directory), they'll be preserved on **adobeTemp** directory.
 
-        ![image](https://github.com/user-attachments/assets/16837dc3-d4a9-4157-92d8-84d75a9d0d47)
+        ![image](./pictures/389189907-16837dc3-d4a9-4157-92d8-84d75a9d0d47.png)
 
         - Sizes will be different due to Zip-Lzma2 compression method. Important thing is folder and file count should be same.
         - But **SupportAssets** and **AEPlugin** will be moved to respective folders.
           - AEPlugin directory for Adobe XD 57.1.12.2.
             - On **C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\Public\AEXD-57.1.12.2**
            
-              ![image](https://github.com/user-attachments/assets/7df913de-6333-41c5-9338-a35172db263f)
+              ![image](./pictures/389190017-7df913de-6333-41c5-9338-a35172db263f.png)
 
           - SupportAssets directory for Adobe XD 57.1.12.2.
             - On **C:\Program Files\Common Files\Adobe\Adobe XD**
            
-              ![image](https://github.com/user-attachments/assets/b692f099-8874-4eeb-946a-b93acf3ccf27)
+              ![image](./pictures/389190079-b692f099-8874-4eeb-946a-b93acf3ccf27.png)
 
               - **csdkConfiguratorLog.txt** will be created later by command specified in *.pimx file.
              
-                ![image](https://github.com/user-attachments/assets/be8e752d-d25b-4b32-b2c9-65c7a0df3d27)
+                ![image](./pictures/389190241-be8e752d-d25b-4b32-b2c9-65c7a0df3d27.png)
 
               - It's not necessary to backup this file.
 ## Instructions
@@ -59,7 +59,7 @@ They can be tricky to get these installer files as when ~~install~~ (extraction)
 - Wait to install to be complete.
 - You'll see destination directory contains bunch of folders starting with ETR. These are the unpacked assets copied from adobeTemp directory.
 
-  ![image](https://github.com/user-attachments/assets/e3e18b64-e3a0-41c5-bba0-127f0edc48af)
+  ![image](./pictures/385400098-e3e18b64-e3a0-41c5-bba0-127f0edc48af.png)
   
   - Be sure to verify file and folder count from 7-Zip or other archiving software. Sometimes even with constant spawning of robocopy, some files may missing. You can try to find these missing files from installed location of Adobe program and copy it to appropriate location on extracted installer assets.
     - Especially on Adobe XD and Fresco (Very especially CSDKConfigurator.exe (this file and icons directory)).
@@ -95,7 +95,7 @@ They can be tricky to get these installer files as when ~~install~~ (extraction)
 - Some installers have resources\AppInfo.json file (i.e. Photoshop and Premiere Elements 2023). If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version **(>=5.6.0.788)** and HyperDrive installer gives "Installer is corrupt" error. To solve this, use HyperDrive installer engine with older version from one of the installers (**4.5.0.300=<x<=5.5.0.617** should work.).
   - If you ignore this, you'll see this screen:
 
-    ![image](https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/assets/44976117/92a70fdc-9cf3-4591-bdd3-76724cc06bf4)
+    ![image](./pictures/320203200-92a70fdc-9cf3-4591-bdd3-76724cc06bf4.png)
     
     - If you want most up to date HyperDrive installer engine, you can just replace Set-up.exe on root of the installer media with version **4.5.0.300=<x<=5.5.0.617** from **/packages/ADC/HDBox/HDBox.pima/Set-up.exe** that you get from standard Adobe Creative Cloud installer version **4.5.0.300=<x<=5.5.0.617**.
   - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
@@ -108,6 +108,6 @@ They can be tricky to get these installer files as when ~~install~~ (extraction)
   | Set-up.exe | Set-up.exe |
   - If you skip this, the installer will say "Installer file may be damaged" as it can't find "common" directory inside of installation media.
 
-    ![image](https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/assets/44976117/03447c52-e379-4d12-8d96-a1ddd3f9ca43)
+    ![image](./pictures/319545212-03447c52-e379-4d12-8d96-a1ddd3f9ca43.png)
     
     - If you want to use old install media layout, you can just replace Set-up.exe on root of the installer media with version **4.5.0.300=<x<=5.3.1.470** from **/packages/ADC/HDBox/HDBox.pima/Set-up.exe** that you get from standard Adobe Creative Cloud installer version **4.5.0.300=<x<=5.3.1.470**.
