@@ -15,13 +15,13 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 Normally, packed assets with Zip-Lzma2 method, folder and file structure can be seen via any archiving software, but cannot be directly unpacked via 7-Zip or other archive software that I know in existence. And these packages expanded size and compressed size are equal and compression method is Store on these packages.
 - But even if you try to repack directly unpacked assets with 7-Zip or other archive software on 7-Zip as Store (-mx0 on 7-Zip), it gives "app cannot be installed at this time, error 127" error. It means "package cannot be extracted" error on https://helpx.adobe.com/creative-cloud/kb/troubleshoot-download-install-logs.html#error127.
 
-  ![image](https://github.com/user-attachments/assets/9caa637f-514b-4766-94b3-4b61aac26e33)
+  ![image](./pictures/389202969-9caa637f-514b-4766-94b3-4b61aac26e33.png)
 
-  ![image](https://github.com/user-attachments/assets/c684f98d-04cd-43ae-84d5-a5bfc6ad55c7)
+  ![image](./pictures/389202473-c684f98d-04cd-43ae-84d5-a5bfc6ad55c7.png)
 
 - But they will be extracted to adobeTemp folder during installation as raw into bunch of folders with random GUIDs into /.adobeTemp or maybe another adobeTemp folder on other drives root that depends on Creative Cloud settings.
 
-  ![image](https://github.com/user-attachments/assets/21bd56b1-7bc2-4762-a549-773cb5b75f66)
+  ![image](./pictures/389202748-21bd56b1-7bc2-4762-a549-773cb5b75f66.png)
 
 - They can be tricky to get these installer files as when extraction of specific package was finished, they will be moved to directories that specified in *.pimx file. This script constantly summons cp with no cooldown as any file enters to /.adobeTemp or any folder you specified in script and copies unpacked Adobe assets from adobeTemp folder to desired location, so be sure to have beefy computer if you can. It copies only new files so new files instantly copied to desired location as Adobe Installer copies unpacked assets to adobeTemp directory.
   - If you patch HDPIM.dylib on **/Library/Application Support/Adobe/Adobe Desktop Common/HDBox/HDPIM.dylib** that I'm gonna mention it on "To patch dylib's" section on https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac-patchedbins#to-patch-dylibs, you can at least preserve directory structure and most importantly, *.pimx file that's extracted to **adobeTemp** directory.
@@ -62,7 +62,7 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
 - Some installers have resources\AppInfo.json file (i.e. Photoshop and Premiere Elements 2023). If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version **(>=5.6.0.788)** and HyperDrive installer gives "Installer is corrupt" error. To solve this, use HyperDrive installer engine with older version from one of the installers (**4.5.0.300=<x<=5.5.0.617** should work.).
   - If you ignore this, you'll see this screen:
  
-    ![image](https://github.com/user-attachments/assets/e5556fa0-5083-40bd-be5b-52fd1eb7e893)
+    ![image](./pictures/389205442-e5556fa0-5083-40bd-be5b-52fd1eb7e893.png)
 
   - If you want most up to date HyperDrive installer engine, you can just replace Install.app on root of the installer media with version **4.5.0.300=<x<=5.5.0.617** from **/packages/ADC/HDBox/HDBox.pima/Install.app** that you get from standard Adobe Creative Cloud installer version **4.5.0.300=<x<=5.5.0.617**.
   - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
@@ -75,6 +75,6 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
   | Install.app | Install.app |
   - If you skip this, the installer will say "Installer file may be damaged" as it can't find "common" directory inside of installation media.
  
-    ![image](https://github.com/user-attachments/assets/b6674f3f-4528-4950-9587-2fa8d94d4a33)
+    ![image](./pictures/389205166-b6674f3f-4528-4950-9587-2fa8d94d4a33.png)
 
     - If you want to use old install media layout, you can just replace Install.app on root of the installer media with version **4.5.0.300=<x<=5.3.1.470** from **/packages/ADC/HDBox/HDBox.pima/Install.app** that you get from standard Adobe Creative Cloud installer version **4.5.0.300=<x<=5.3.1.470**.
