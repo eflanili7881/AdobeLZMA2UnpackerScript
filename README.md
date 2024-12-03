@@ -18,18 +18,18 @@ Please, don't use this script for piracy things. I wrote this script for who wan
     - On IDA Pro, search for string **FileUtils**.
     - Click the result on **0x100e23ba** or **0x100e23eb**
    
-      ![image](https://github.com/user-attachments/assets/9ab69247-c617-49a2-a987-73d976b01e4d)
+      ![image](./pictures/389191837-9ab69247-c617-49a2-a987-73d976b01e4d.png)
 
     - Find the start of function that contains result from previous step (in case, it's **0x100e2351**)
    
-      ![image](https://github.com/user-attachments/assets/dec73ca8-28cb-42f3-a94d-1c0c200aa4fe)
+      ![image](./pictures/389192001-dec73ca8-28cb-42f3-a94d-1c0c200aa4fe.png)
 
     - You got first location to patch. Take note this address.
       - This address prevents deletion of *.pimx file.
     - On IDA Pro, search for string **RemoveDirectoryW**.
     - Click the result on **0x100e251b**.
    
-      ![image](https://github.com/user-attachments/assets/b3bd4016-0817-4e31-811d-cab488b870af)
+      ![image](./pictures/389192238-b3bd4016-0817-4e31-811d-cab488b870af.png)
 
     - Look for address **0x100e251a** (0x1 address before the result that come from previous step.)
     - You got last location to patch. Take note this address.
@@ -38,22 +38,22 @@ Please, don't use this script for piracy things. I wrote this script for who wan
     - Open HDPIM.dll on Cutter with experimental (aaaa) mode and in write mode (-w).
     - Jump to address 0x100e2351.
    
-      ![image](https://github.com/user-attachments/assets/df74c82d-0063-49de-96e7-2f0e74bb5a5f)
+      ![image](./pictures/389192447-df74c82d-0063-49de-96e7-2f0e74bb5a5f.png)
 
     - Change **mov byte [ebp - 4], 0** to **jmp 0x100e244f** with disabling *Fill all remaining bytes with NOP opcodes*.
     - Changing will invalidate function on address 0x100e235e but it's not going to be a problem.
     - When you reload file with same settings, graph will turn into this:
    
-      ![image](https://github.com/user-attachments/assets/a14691aa-b8ec-47ef-a89c-3822523447cb)
+      ![image](./pictures/389192705-a14691aa-b8ec-47ef-a89c-3822523447cb.png)
 
     - With that, you patched code that deletes *.pimx file.
     - Jump to address 0x100e251a.
    
-      ![image](https://github.com/user-attachments/assets/e0702bf1-74e5-4606-b434-72c2acfd68c5)
+      ![image](./pictures/389192780-e0702bf1-74e5-4606-b434-72c2acfd68c5.png)
 
     - Change **push eax** to **jmp 0x100e26bb** with disabling *Fill all remaining bytes with NOP opcodes*.
     - When you reload file with same settings, graph will turn into this:
    
-      ![image](https://github.com/user-attachments/assets/2d5d3097-6668-4273-9611-51758d22dc44)
+      ![image](./pictures/389192871-2d5d3097-6668-4273-9611-51758d22dc44.png)
 
     - With that, you patched code that deletes directory structure on **adobeTemp** folder.
