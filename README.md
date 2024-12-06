@@ -44,19 +44,30 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
     - If web page isn't accessible, try downloading from direct link at https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg.
       - You can try it run OS from HDD (Creative Cloud forces user to install OS drive) or change adobeTemp folder to HDD?, then set copy destination to a fast medium (like NVMe SSD).
     - Above link only downloads latest version; if you need another specific version, you can check Wayback Machine for link https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg or you can download specific versions from Wayback Machine below:
-      |Version|Link|Note|
-      |:-:|:-:|:-:|
-      |4.3.0.113|https://web.archive.org/web/20200625170051/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
-      |4.3.0.134|https://web.archive.org/web/20200813063747/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
-      |4.3.0.146|https://web.archive.org/web/20201029152543/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
-      |4.3.0.151|https://web.archive.org/web/20210321222552/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
-      |4.3.0.204|https://web.archive.org/web/20220824095902/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
-      |4.3.0.228|https://web.archive.org/web/20230130232631/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
-      |4.3.0.231|https://web.archive.org/web/20230315092416/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
-      |4.3.0.519|https://web.archive.org/web/20231227054016/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
-      |4.3.0.591|https://web.archive.org/web/20240324222213/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|Last version for macOS High Sierra and Mojave|
-      |4.3.0.680|https://web.archive.org/web/20240516194139/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg|First version to require macOS Catalina|
-      |4.3.0.834|https://web.archive.org/web/20241123142301/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg||
+      - 4.3.0.113
+        - https://web.archive.org/web/20200625170051/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
+      - 4.3.0.134
+        - https://web.archive.org/web/20200813063747/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
+      - 4.3.0.146
+        - https://web.archive.org/web/20201029152543/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
+      - 4.3.0.151
+        - https://web.archive.org/web/20210321222552/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
+      - 4.3.0.204
+        - https://web.archive.org/web/20220824095902/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
+      - 4.3.0.228
+        - https://web.archive.org/web/20230130232631/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
+      - 4.3.0.231
+        - https://web.archive.org/web/20230315092416/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
+      - 4.3.0.519
+        - https://web.archive.org/web/20231227054016/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
+      - 4.3.0.591
+        - https://web.archive.org/web/20240324222213/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
+          - Last version for macOS High Sierra and Mojave
+      - 4.3.0.680
+        - https://web.archive.org/web/20240516194139/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
+          - First version to require macOS Catalina
+      - 4.3.0.834
+        - https://web.archive.org/web/20241123142301/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
   - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
     - Or you can search and replace "condition" with anything else that isn't conflicting with any variable. This also allows to unpack all architectures and other special packages.
 - Some installers have resources\AppInfo.json file (i.e. Photoshop and Premiere Elements 2023). If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version **(>=5.6.0.788)** and HyperDrive installer gives "Installer is corrupt" error. To solve this, use HyperDrive installer engine with older version from one of the installers (**4.5.0.300=<x<=5.5.0.617** should work.).
@@ -67,12 +78,16 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
   - If you want most up to date HyperDrive installer engine, you can just replace Install.app on root of the installer media with version **4.5.0.300=<x<=5.5.0.617** from **/packages/ADC/HDBox/HDBox.pima/Install.app** that you get from standard Adobe Creative Cloud installer version **4.5.0.300=<x<=5.5.0.617**.
   - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
 - If you're gonna use **5.3.5.518 (or 5.3.5.499 if it's first pre-release ARM 64-Bit release)=<x<=5.5.0.617**, be sure to put contents of packages folder to common/osx10/packages (or macarm64 if you're gonna use ARM 64-bit version of Creative Cloud) and contents of resources folder (except content directory) to resources/osx10 (or macarm64 if you're gonna use ARM 64-bit version of Creative Cloud) inside installation media. Changed sections marked as bold.
-  | Old install structure **(<5.3.5.518)** | New install structure **(>=5.3.5.518 (or 5.3.5.499 if it's first pre-release ARM 64-Bit release))** |
-  | :-: | :-: |
-  | **packages** | **common\osx10(or macarm64)\packages** |
-  | products | products |
-  | **resources** | **resources\osx10(or macarm64)(Only AdobePIM.dylib moved here.)** |
-  | Install.app | Install.app |
+  - Old install structure **(<5.3.5.518)**
+    - **packages**
+    - products
+    - **resources**
+    - Install.app
+  - New install structure **(>=5.3.5.518 (or 5.3.5.499 if it's first pre-release ARM 64-Bit release))**
+    - **common\osx10(or macarm64)\packages**
+    - products
+    - **resources\osx10(or macarm64)(Only AdobePIM.dylib moved here.)**
+    - Install.app
   - If you skip this, the installer will say "Installer file may be damaged" as it can't find "common" directory inside of installation media.
  
     ![image](./pictures/389205166-b6674f3f-4528-4950-9587-2fa8d94d4a33.png)
