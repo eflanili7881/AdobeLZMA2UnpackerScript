@@ -70,13 +70,6 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
         - https://web.archive.org/web/20241123142301/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
   - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
     - Or you can search and replace "condition" with anything else that isn't conflicting with any variable. This also allows to unpack all architectures and other special packages.
-- Some installers have resources\AppInfo.json file (i.e. Photoshop and Premiere Elements 2023). If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version **(>=5.6.0.788)** and HyperDrive installer gives "Installer is corrupt" error. To solve this, use HyperDrive installer engine with older version from one of the installers (**4.5.0.300=<x<=5.5.0.617** should work.).
-  - If you ignore this, you'll see this screen:
- 
-    ![image](./pictures/389205442-e5556fa0-5083-40bd-be5b-52fd1eb7e893.png)
-
-  - If you want most up to date HyperDrive installer engine, you can just replace Install.app on root of the installer media with version **4.5.0.300=<x<=5.5.0.617** from **/packages/ADC/HDBox/HDBox.pima/Install.app** that you get from standard Adobe Creative Cloud installer version **4.5.0.300=<x<=5.5.0.617**.
-  - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
 - If you're gonna use **5.3.5.518 (or 5.3.5.499 if it's first pre-release ARM 64-Bit release)=<x<=5.5.0.617**, be sure to put contents of packages folder to common/osx10/packages (or macarm64 if you're gonna use ARM 64-bit version of Creative Cloud) and contents of resources folder (except content directory) to resources/osx10 (or macarm64 if you're gonna use ARM 64-bit version of Creative Cloud) inside installation media. Changed sections marked as bold.
   - Old install structure **(<5.3.5.518)**
     - **packages**
@@ -93,3 +86,12 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
     ![image](./pictures/389205166-b6674f3f-4528-4950-9587-2fa8d94d4a33.png)
 
     - If you want to use old install media layout, you can just replace Install.app on root of the installer media with version **4.5.0.300=<x<=5.3.1.470** from **/packages/ADC/HDBox/HDBox.pima/Install.app** that you get from standard Adobe Creative Cloud installer version **4.5.0.300=<x<=5.3.1.470**.
+- Some installers have resources\AppInfo.json file (i.e. Photoshop and Premiere Elements 2023). If this file exists, probably application.json and other crucial files are cannot be altered due to HyperDrive installer engine's version **(>=5.6.0.788)** and HyperDrive installer gives "Installer is corrupt" error. To solve this, use HyperDrive installer engine with older version from one of the installers (**4.5.0.300=<x<=5.5.0.617** should work.).
+  - If you ignore this, you'll see this screen:
+ 
+    ![image](./pictures/389205442-e5556fa0-5083-40bd-be5b-52fd1eb7e893.png)
+
+  - If you want most up to date HyperDrive installer engine, you can just replace Install.app on root of the installer media with version **4.5.0.300=<x<=5.5.0.617** from **/packages/ADC/HDBox/HDBox.pima/Install.app** that you get from standard Adobe Creative Cloud installer version **4.5.0.300=<x<=5.5.0.617**.
+    - For old installer media layout : **4.5.0.300=<x<=5.3.1.470**
+    - For new installer media layout : **5.3.5.518 (or 5.3.5.499 if it's first pre-release ARM 64-Bit release)=<x<=5.5.0.617**
+  - AppInfo.json can be generated with some tool if I understand algorithm of these strings, above steps will be unnecassary. If you know how to generate these strings, let me know :).
