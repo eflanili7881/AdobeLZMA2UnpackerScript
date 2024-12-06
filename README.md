@@ -62,10 +62,10 @@ Normally, packed assets with Zip-Lzma2 method, folder and file structure can be 
         - https://web.archive.org/web/20231227054016/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
       - 4.3.0.591
         - https://web.archive.org/web/20240324222213/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
-          - Last version for macOS High Sierra and Mojave
+          - Last version for macOS High Sierra 10.13 and Mojave 10.14
       - 4.3.0.680
         - https://web.archive.org/web/20240516194139/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
-          - First version to require macOS Catalina
+          - First version to require macOS Catalina 10.15
       - 4.3.0.834
         - https://web.archive.org/web/20241123142301/https://swupmf.adobe.com/webfeed/CleanerTool/mac/AdobeCreativeCloudCleanerTool.dmg
   - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
