@@ -9,6 +9,10 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 - [Me](https://github.com/eflanili7881) for editing above script to use RoboCopy instead of XCopy.
 - Adobe Systems Incorporated for providing Zip-Lzma2-compressed applications.
 
+## Notes
+- HDPIM.dylib controls moving extracted assets and deleting folder structure and most importantly *.pimx file from temporary extraction location. If you patch specific address on HDPIM.dylib, you'll prevent deletion of these things.
+  - But I can't prevent assets to be moved. I'll inspect that deeper.
+
 ## To patch dylib's
 - Download Cutter from https://cutter.re or https://github.com/rizinorg/cutter/releases
 - Install Cutter and IDA Pro 6.5 or newer.
