@@ -104,12 +104,16 @@ They can be tricky to get these installer files as when ~~install~~ (extraction)
   - To unpack all language assets, on application.json, change every language packages conditions from that langauge to your desired install language (i.e. en_US).
     - Or you can search and replace "condition" with anything else that isn't conflicting with any variable. This also allows to unpack all architectures and Windows 7 special packages.
 - If you're gonna use **5.3.5.518 (or 5.3.5.499 if it's first pre-release ARM 64-Bit release)=<x<=5.5.0.617**, be sure to put contents of packages folder to common/win64/packages (or winarm64 if you're gonna use ARM 64-bit version of Creative Cloud) and contents of resources folder (except content directory) to resources/win64 (or winarm64 if you're gonna use ARM 64-bit version of Creative Cloud) inside installation media. Changed sections marked as bold.
-  | Old install structure **(<5.3.5.518)** | New install structure **(>=5.3.5.518 (or 5.3.5.499 if it's first pre-release ARM 64-Bit release))** |
-  | :-: | :-: |
-  | **packages** | **common\win64(or winarm64)\packages** |
-  | products | products |
-  | **resources** | **resources\win64(or winarm64)(Only AdobePIM.dll and UpdateRedirector.dat moved here.)** |
-  | Set-up.exe | Set-up.exe |
+  - Old install structure **(<5.3.5.518)**
+    - **packages**
+    - products
+    - **resources**
+    - Set-up.exe
+  - New install structure **(>=5.3.5.518 (or 5.3.5.499 if it's first pre-release ARM 64-Bit release))**
+    - **common\win64(or winarm64)\packages**
+    - products
+    - **resources\win64(or winarm64)(Only AdobePIM.dll and UpdateRedirector.dat moved here.)**
+    - Set-up.exe
   - If you skip this, the installer will say "Installer file may be damaged" as it can't find "common" directory inside of installation media.
 
     ![image](./pictures/319545212-03447c52-e379-4d12-8d96-a1ddd3f9ca43.png)
