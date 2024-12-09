@@ -9,6 +9,11 @@ Please, don't use this script for piracy things. I wrote this script for who wan
 - [Me](https://github.com/eflanili7881) for editing above script to use RoboCopy instead of XCopy.
 - Adobe Systems Incorporated for providing Zip-Lzma2-compressed applications.
 
+# Latest Versions
+## For Macintosh Platform (script not uploaded)
+## For Windows Platform - v0.1.1-win rc
+https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/releases/tag/rc-win-0.1.1
+
 # Branches
 ## For Macintosh-based Unpacker (script not uploaded)
 https://github.com/eflanili7881/AdobeLZMA2UnpackerScript/tree/unpacker-mac
